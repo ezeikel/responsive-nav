@@ -8,7 +8,6 @@ import 'normalize.css';
 
 const Wrapper = styled.div`
   display: grid;
-  @media(min-width: 1024px) {}
 `;
 
 class App extends Component {
