@@ -1,4 +1,4 @@
-import { createGlobalStyle, keyframes } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 /* CSS Variables */
@@ -45,51 +45,18 @@ body {
   padding: 0;
   font-family: var(--default-font-family);
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: var(--color-light-grey);
-  /*font-weight: 300;*/
-}
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: var(--color-light-grey);
-  font-weight: 300;
-}
-:-ms-input-placeholder {
-  /* IE 10+ */
-  color: var(--color-light-grey);
-  font-weight: 300;
-}
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: var(--color-light-grey);
-  font-weight: 300;
-}
-.map {
-  width: 100%;
-  height: 300px;
-}
-`;
-
-export const spinKeyframe = keyframes`
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 `;
