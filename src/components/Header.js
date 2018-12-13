@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Nav from "./Nav";
 
 const Wrapper = styled.header`
+  position: relative;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
