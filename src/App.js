@@ -19,6 +19,7 @@ library.add(fab, far, faShoppingBag, faHeart, faUser, faSearch);
 
 const Wrapper = styled.div`
   display: grid;
+  @media (min-width: 768px) {}
 `;
 
 class App extends Component {
