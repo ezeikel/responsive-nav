@@ -32,11 +32,11 @@ const NavLinks = styled.ul`
   }
 `;
 
-const Nav = () => {
-  const [active, toggleActive] = useState(false);
+const Nav = ({ active, toggleActive }) => {
 
-  return <Wrapper>
-      <NavLinks active={active}>
+  return (
+    <Wrapper>
+      <NavLinks>
         <li>
           <Link to="home">
             <FontAwesomeIcon icon={["far", "home"]} color="#000" size="lg" />
@@ -48,9 +48,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="bag">
-            <FontAwesomeIcon icon={["far", "shopping-bag"]} color="#000" size="lg" />
-          </Link>
+          <FontAwesomeIcon icon={["far", "shopping-bag"]} color="#000" size="lg" onClick={() => toggleActive(!active)} />
         </li>
         <li>
           <Link to="saved">
@@ -63,7 +61,8 @@ const Nav = () => {
           </Link>
         </li>
       </NavLinks>
-    </Wrapper>;
+    </Wrapper>
+  );
 };
 
 export default Nav;
